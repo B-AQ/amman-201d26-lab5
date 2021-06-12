@@ -34,7 +34,9 @@ function multiply(a, b) {
   return[answer,`The product of ${a} and ${b} is ${answer}.`]
   
 }
+
 multiply(); 
+
 
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
@@ -83,7 +85,7 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) {
-
+  
   //eslint-disable-line
   let sumTwo = sum(sumArr[0], sumArr[1])[0];
   let resultOfSum = sum(sumTwo, sumArr[2])[0];
