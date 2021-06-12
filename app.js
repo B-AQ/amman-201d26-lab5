@@ -82,8 +82,12 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) {
-
+  
   //eslint-disable-line
+  let sumTwo = sum(sumArr[0], sumArr[1])[0];
+  let resultOfSum = sum(sumTwo, sumArr[2])[0];
+
+  return [resultOfSum, `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${resultOfSum} is their sum.`];
 }
 
 testSumArray(testArray);
